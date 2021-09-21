@@ -1,8 +1,12 @@
-baseURL: "http://example.org/"
+baseURL: "https://hieu6.github.io/curioushieu/"
 languageCode: "en-us"
 title: "hieu's blog"
 theme: archie
 copyright: © 2021 hieu
+paginate: 3
+
+permalinks: 
+  post: "/:slug/"
 
 params:
   mode: "auto"    # color-mode → light,dark or auto
