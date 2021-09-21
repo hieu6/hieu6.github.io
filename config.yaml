@@ -7,12 +7,13 @@ copyright: © 2021 hieu
 params:
   mode: "auto"    # color-mode → light,dark or auto
   subtitle: |
-    Hello! I'm hieu. You've found my collection of curiosities and explorations.
+    Hello! I'm hieu. You've found my collection of curiosities and explorations. 
     > Current interests:
     
-    * SQL, Jamstack (Hugo, CSS, Golang)
+    * data analytics (SQL, Python-curious)
+    * Jamstack (Hugo, HTML/CSS, JS-curious)
     * culture, behavior psychology, communication, relationships
-    * sociology, philosophy, neuroscience, nutrition & exercise
+    * sociology, philosophy, poetry, neuroscience, nutrition & exercise
     * mission & purpose, writing, self-management, principled living
 
 menu:
