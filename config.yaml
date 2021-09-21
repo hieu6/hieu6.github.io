@@ -2,17 +2,18 @@ baseURL: "http://example.org/"
 languageCode: "en-us"
 title: "hieu's blog"
 theme: archie
+copyright: © 2021 hieu
 
 params:
   subtitle: hello! i'm hieu.
 
 menu:
   main:
-  - identifier: posts # must match section name
-    name: posts # menu link text
-    url: /posts/
+  - identifier: blog # must match section name
+    name: blog # menu link text
+    url: /blog/
     weight: -110
-  - identifier: reading-notes
+  - identifier: notes
     name: notes
     url: /notes/
     weight: -100
