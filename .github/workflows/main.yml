@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          # submodules: true  # Fetch Hugo themes (true OR recursive)
+          submodules: false  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
@@ -30,6 +30,10 @@ jobs:
   uses: peaceiris/actions-gh-pages@v3
   with:
     personal_token: ${{ secrets.TOKEN }}
+    external_repository: https://hieu6.github.io/
     publish_dir: ./public
+    #   keep_files: true
+    user_name: hieu6
+    user_email: <hieu6n@gmail.com>
     publish_branch: main
-    # cname: hieu6.com
+  #   cname: example.com
