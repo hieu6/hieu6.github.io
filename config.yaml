@@ -8,16 +8,21 @@ params:
 
 menu:
   main:
-  - identifier: blog # must match section name
-    name: This is the blog section # menu link text
-    title: blog section
-    url: /blog/
+  - identifier: posts # must match section name
+    name: posts # menu link text
+    title: posts section
+    url: /posts/
     weight: -110
-  - identifier:
-    name:
-    title:
-    url:
-    weight:
+  - identifier: tags
+    name: tags
+    title: tags
+    url: /tags/
+    weight: 50
+  - identifier: about
+    name: about
+    title: about section
+    url: /about/
+    weight: 110
 
 # EXAMPLE MAIN MENU // links must be relative to site root
 
