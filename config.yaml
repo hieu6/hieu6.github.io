@@ -34,7 +34,3 @@ menu:
     name: tags
     url: /tags/
     weight: 100
-
-# GH Action from GH Marketplace for hugo (?)
-- name: Hugo setup
-  uses: peaceiris/actions-hugo@v2.4.13
