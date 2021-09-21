@@ -5,7 +5,8 @@ theme: archie
 copyright: © 2021 hieu
 
 params:
-  subtitle: hello! i'm hieu.
+  mode: "auto"    # color-mode → light,dark or auto
+  subtitle: "Hello! I'm hieu. You've found my collection of curiosities and explorations."
 
 menu:
   main:
@@ -24,19 +25,5 @@ menu:
   - identifier: about
     name: about
     url: /about/
+    file: content/about.md
     weight: 110
-
-# EXAMPLE MAIN MENU // links must be relative to site root
-
-# menu:
-#  main:
-#  - identifier: about
-#    name: about hugo
-#    pre: <i class='fa fa-heart'></i>
-#    url: /about/
-#    weight: -110
-#  - name: getting started
-#    post: <span class='alert'>New!</span>
-#    pre: <i class='fa fa-road'></i>
-#    url: /getting-started/
-#    weight: -100
