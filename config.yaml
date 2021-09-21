@@ -1,5 +1,35 @@
 baseURL: "http://example.org/"
 languageCode: "en-us"
 title: "curious hieu"
+theme: archie
 
+params:
+  subtitle: what are you thinking about?
 
+menu:
+  main:
+  - identifier: blog # must match section name
+    name: This is the blog section # menu link text
+    title: blog section
+    url: /blog/
+    weight: -110
+  - identifier:
+    name:
+    title:
+    url:
+    weight:
+
+# EXAMPLE MAIN MENU // links must be relative to site root
+
+# menu:
+#  main:
+#  - identifier: about
+#    name: about hugo
+#    pre: <i class='fa fa-heart'></i>
+#    url: /about/
+#    weight: -110
+#  - name: getting started
+#    post: <span class='alert'>New!</span>
+#    pre: <i class='fa fa-road'></i>
+#    url: /getting-started/
+#    weight: -100
