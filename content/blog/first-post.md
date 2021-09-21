@@ -1,5 +1,5 @@
 ---
-title: building a hugo blog
+title: Building This Hugo Blog
 date: 2021-09-21
 weight: 1
 ---
