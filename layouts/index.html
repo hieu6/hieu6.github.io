@@ -2,6 +2,9 @@
 <html>
 	{{ partial "header.html" . }}
 	<body>
+		{{ define "main" }}
+			{{ partial "wikilinks.html" . }}
+		{{ end }}
 		{{.Content}}
 		<div class="content">
 			{{ partial "head.html" . }}

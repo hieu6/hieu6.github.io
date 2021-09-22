@@ -1,0 +1,34 @@
+<!-- 
+=======
+Wiklinks source: https://github.com/crisrojas/Zettels/blob/master/layouts/partials/content.html
+=======
+
+simple from reddit comment:{{ .Content | replaceRE "\\[\\[([^/]+)\\]\\]" "<a href=\"${1}.html\">$1</a>" |safeHTML }}
+https://www.reddit.com/r/gohugo/comments/gqak1j/transform_wikilinks_in_markdown/frs3hii/
+-->
+
+{{ $firstBracket := "\\[\\[" }}
+{{ $lastBracket := "\\]\\]" }}
+
+{{ $wikiregex := "\\[\\[([^/]+?)\\]\\]" }}
+
+{{ $wikilinks := .Content | findRE $wikiregex }}
+
+{{ $.Scratch.Add "content" .RawContent }}
+
+{{ range $wikilinks }}
+
+	{{ $content := . | replaceRE $wikiregex "$1" }}
+	{{ $content := $content | replaceRE "\\?" "\\?" }}
+
+	{{ $wikilink :=  printf "%s%s%s" $firstBracket $content $lastBracket }}
+	
+	{{ $anchorized := $content | anchorize }}
+
+	{{ $link := printf "%s%s%s%s%s%s" "<a href=\"" $anchorized ".html" "\">" $content "</a>" }}
+	
+	{{ $noteContent := $.Scratch.Get "content" | replaceRE $wikilink $link }}
+	{{ $.Scratch.Set "content" $noteContent }}
+{{ end }}
+
+{{ $content := .Scratch.Get "content" }}
