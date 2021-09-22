@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>home on hieu&#39;s blog</title>
+    <link>https://hieu6.github.io/</link>
+    <description>Recent content in home on hieu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2021 hieu</copyright>
+    <lastBuildDate>Tue, 21 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hieu6.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building This Hugo Blog</title>
+      <link>https://hieu6.github.io/blog/first-post/</link>
+      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hieu6.github.io/blog/first-post/</guid>
+      <description>testing wikilinks
+[[first-note]]
+ the terminal isn&amp;rsquo;t so scary after all git is powerful magic  </description>
+    </item>
+    
+    <item>
+      <title>a note about a note</title>
+      <link>https://hieu6.github.io/notes/first-note/</link>
+      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hieu6.github.io/notes/first-note/</guid>
+      <description>what would a note say if a note would say note i am a kitty cat, and i dance dance dance, and i dance dance dance
+this is a nested header this is a new h2 i want to test the toc update: there is no toc </description>
+    </item>
+    
+  </channel>
+</rss>
