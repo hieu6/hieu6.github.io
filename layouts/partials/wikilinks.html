@@ -2,6 +2,9 @@
 =======
 Wiklinks source: https://github.com/crisrojas/Zettels/blob/master/layouts/partials/content.html
 =======
+
+simple from reddit comment:{{ .Content | replaceRE "\\[\\[([^/]+)\\]\\]" "<a href=\"${1}.html\">$1</a>" |safeHTML }}
+https://www.reddit.com/r/gohugo/comments/gqak1j/transform_wikilinks_in_markdown/frs3hii/
 -->
 
 {{ $firstBracket := "\\[\\[" }}

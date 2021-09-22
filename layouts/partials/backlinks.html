@@ -26,7 +26,6 @@ Regex not working for notes with colons on filename because hugo .File.BaseFileN
 		{{ $.Scratch.Add "backlinks" (dict .Permalink $title) }}
 		<li><a href="{{ .Permalink }}">{{ $title }}</a></li>
 	{{ end }}
-{{- end -}}
 
 {{- $backlinks := $.Scratch.Get "backlinks" -}}
 
